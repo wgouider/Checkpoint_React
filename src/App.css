@@ -1,38 +1,35 @@
-.App {
-  text-align: center;
+
+.App
+{
+    display: flex;
+    flex-direction: column;
+}
+.Cards
+{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+margin-left:  450px;
+margin-right: 450px;
+width: auto;
+height: auto;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Caroussel
+{
+    text-align: center;
+    padding: 10px;
+    width: auto;
+    height: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-img-top
+{
+    width: 430px;
+    height: 130px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2
+{
+    text-align: center;
+  
+  
 }

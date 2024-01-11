@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+// Import des fichiers JS et des libraries react//
+  import "./App.css"
+  import NavBar from "./NavBar"
+  import Cards from "./Cards"
+  import  Slider  from "./caroussel";
+  import Badge from 'react-bootstrap/Badge';
+  function App() {
+    return (
+        <div className="App">
+        {/* Appel du fichier NAVBAR.JS */}
+          <div>
+            <NavBar/>
+          </div>
+        {/* Header dy type Badge modèle reactBootstrap  */}
+          <h2>
+            <Badge bg="secondary">Bienvenue chez Enigma Travel - Où l'aventure commence et les souvenirs ne finissent jamais.</Badge>
+          </h2>
+        {/*Appel du fichier JS Caroussels   */}
+          <div className="Caroussel">
+            <Slider/>
+          </div>
+          {/*Appel du fichier JS Cards   */}
+          <div className="Cards">
+            <Cards/>
+          </div>
+        
+        </div>
   );
 }
 
